@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Shiv Sena Garden",
+        "capital": "Shiv"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.079784,
+          19.223038
+
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Samrat Hotel",
+        "capital": "Salem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.081940,
+          19.222238
+
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "California",
+        "capital": "Sacramento"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.493779,
+          38.576641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Idaho",
+        "capital": "Boise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.199,
+          43.61777
+        ]
+      }
+    }
+  ]
+}

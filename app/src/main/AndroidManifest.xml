@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".MarkersAndRouting"></activity>
+        <activity android:name=".OnlyMarkers">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

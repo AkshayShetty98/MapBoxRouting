@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
 
+
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(@NonNull final MapboxMap mapboxMap) {
         this.mapboxMap = mapboxMap;
-        mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+        mapboxMap.setStyle(Style.OUTDOORS, new Style.OnStyleLoaded() {
             @Override
             public void onStyleLoaded(@NonNull Style style) {
                 enableLocationComponent(style);
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean simulateRoute = false;
+                        boolean simulateRoute = true;
                         NavigationLauncherOptions options = NavigationLauncherOptions.builder()
                                 .directionsRoute(currentRoute)
                                 .shouldSimulateRoute(simulateRoute)
@@ -168,6 +169,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             navigationMapRoute = new NavigationMapRoute(null, mapView, mapboxMap, R.style.NavigationMapRoute);
                         }
                         navigationMapRoute.addRoute(currentRoute);
+                        Log.d("DistanceX",String.valueOf(currentRoute.distance()));
                     }
 
                     @Override
